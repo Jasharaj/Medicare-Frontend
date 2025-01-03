@@ -11,14 +11,15 @@ const useFetchData = (url) => {
             setLoading(true)
             try {
                 const res = await fetch(url, {
-                    headers: { Authorization: `Bearer ${token}` }
-                });         
+                    headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+                    // headers: { Authorization: `Bearer ${token}` }
+                });             
 
                 const result = await res.json();
 
-                // if (!res.ok) {
-                //     throw new Error(result.message + '🥲')
-                // }
+                if (!res.ok) {
+                    throw new Error(result.message + '🥲')
+                }
 
                 setData(result.data)
                 setLoading(false)
