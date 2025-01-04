@@ -57,7 +57,7 @@ const Profile = ({ doctorData }) => {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json',
-                    Authorization: `Bearer ${token}`
+                    Authorization: `Bearer ${localStorage.getItem('token')}`
                 },
                 body: JSON.stringify(formData)
             })
