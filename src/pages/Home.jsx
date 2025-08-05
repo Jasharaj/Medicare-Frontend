@@ -31,7 +31,7 @@ const Home = () => {
                   We help patients live a healthy, longer life.
                 </h1>
                 <p className='text__para'>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, illum labore omnis, commodi architecto optio soluta repudiandae reiciendis consectetur
+                  We are committed to delivering compassionate, personalized care that improves lives and builds healthier communities every day.
                 </p>
                 <button className='btn'>Request an appointment</button>
               </div>
